@@ -11246,3 +11246,21 @@ header.masthead .site-heading .h1 {
     font-size: 2.25rem;
   }
 }
+
+/* only light mode */
+@media (prefers-color-scheme: light) {
+  .dark {
+    display: none;
+  }
+}
+
+/* only dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: lightgray;
+    background: black;
+  }
+  .light {
+    display: none;
+  }
+}
